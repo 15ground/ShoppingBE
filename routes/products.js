@@ -12,4 +12,7 @@ router
   .route("/:id")
   .put(productsController.updateProduct)
   .delete(productsController.deleteProduct);
+  router
+  .route("/delete/:id")
+  .post(productsController.deleteProduct);
 module.exports = router;
